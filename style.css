@@ -257,6 +257,10 @@ header .navbar {
     --font-size-xxl: 1.8rem;
   }
 
+  .navbar .nav-logo img {
+    width: 10vh;
+  }
+
   body.show-mobile-menu header::before {
     content: "";
     position: fixed;
