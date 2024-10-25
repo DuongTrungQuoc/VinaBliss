@@ -171,11 +171,139 @@ header .navbar {
   gap: 23px;
 }
 
-.hero-details .button {
+/* button from uiverse.io  */
+.button-io {
+  position: relative;
+  padding: 10px 26px;
+  background: var(--secondary-color);
+  font-size: 17px;
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-m);
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  transition: 0.4s ease;
+}
+
+.button-io:hover {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  animation: wind 2s ease-in-out infinite;
+
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  0% {
+    background-position: 50% 100%;
+  }
+
+  0% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(49, 71, 58, 0.3));
+}
+
+.button-io:hover .icon-1 {
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  transform: rotate(10deg);
+}
+
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  transform-origin: 50% 0;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(49, 71, 58, 0.5));
+}
+
+.button-io:hover .icon-2 {
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform-origin: 50% 0;
+  transform: rotate(-5deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.button-io:hover .icon-3 {
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* end button from uiverse.io */
+.hero-details .contact-us {
   padding: 10px 26px;
   border: 2px solid transparent;
-
-
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  font-size: 17px;
   border-radius: var(--border-radius-m);
   background: var(--secondary-color);
   font-weight: var(--font-weight-medium);
@@ -183,18 +311,12 @@ header .navbar {
   transition: 0.4s ease;
 }
 
-.hero-details .button:hover,
-.hero-details .buttons .contact-us {
+.hero-details .contact-us:hover {
   color: var(--secondary-color);
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
   background: var(--primary-color);
 }
 
-.hero-details .buttons .contact-us:hover {
-  color: var(--primary-color);
-  border-color: var(--secondary-color);
-  background: var(--secondary-color);
-}
 
 /* AboutUs section styling */
 .about-section {
