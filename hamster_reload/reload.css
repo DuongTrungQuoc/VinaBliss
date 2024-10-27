@@ -1,10 +1,16 @@
 .wheel-and-hamster {
   --dur: 1s;
+  margin: 0;
+  padding: 0;
   position: relative;
-  width: 12em;
-  height: 12em;
-  font-size: 14px;
+  width: 90vw;
+  /* Chiếm toàn bộ chiều rộng màn hình */
+  height: 90vh;
+  /* Chiếm toàn bộ chiều cao màn hình */
+  font-size: 50px;
+  /* Điều chỉnh font-size cho các thành phần bên trong */
 }
+
 
 .wheel,
 .hamster,
@@ -337,5 +343,13 @@
 
   to {
     transform: rotate(-1turn);
+  }
+}
+
+@media(max-width:700px) {
+  .wheel-and-hamster {
+    width: 12em;
+    height: 12em;
+    font-size: 14px;
   }
 }

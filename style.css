@@ -992,6 +992,13 @@ header .navbar {
   border-radius: var(--border-radius-m);
   padding: 10px 26px;
   font-weight: var(--font-weight-medium);
+  transition: 0.3 ease;
+  border: 1px solid white;
+}
+
+.menu-section .menu-list .menu-item .buy-button:hover {
+  background: transparent;
+  color: white;
 }
 
 /* Responsive media query code for max width 900px */
@@ -1068,7 +1075,7 @@ header .navbar {
 
   .about-section .section-content {
     gap: 70px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .about-section .about-image-wrapper .about-image {
@@ -1076,5 +1083,24 @@ header .navbar {
     height: 100%;
     max-width: 250px;
     aspect-ratio: 1;
+  }
+
+  .product-section .product-content {
+    /* gap: 50px; */
+    text-align: center;
+    padding: 30px 20px 30px;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+  }
+
+  .product-section .product-details .subtitle,
+  .product-section .product-details .description {
+    max-width: 90%;
+  }
+
+  .product-section .product-img {
+    max-width: 270px;
+    margin-right: 0;
   }
 }

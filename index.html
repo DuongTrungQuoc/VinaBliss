@@ -8,6 +8,9 @@
   <!-- Linking Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <!-- Linking Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -29,13 +32,13 @@
           <a href="#product" class="nav-link">Product</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Testimonials</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="#" class="nav-link">Gallery</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
       <button id="menu-open-button" class="fas fa-bars"></button>
@@ -91,7 +94,7 @@
               </svg>
             </div>
           </button>
-          <button class="contact-us">Contact Us</button>
+          <button class="contact-us" onclick="scrollToContact()">Contact Us</button>
         </div>
       </div>
 
@@ -113,10 +116,11 @@
           <div class="social-link-list">
             <a href="https://www.facebook.com/profile.php?id=61567860052749&mibextid=LQQJ4d" class="social-link"
               target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.didongmy.com/vnt_upload/news/05_2024/anh-27-meme-dang-yeu-didongmy.jpg"
-              class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@meli_vinafresh?_t=8qta4VndWhV&_r=1" class="social-link" target="_blank"><i
                 class="fa-brands fa-tiktok"></i></a>
+            <a href="hamster_reload/reload.html" class="social-link" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+
           </div>
         </div>
       </div>
@@ -181,8 +185,7 @@
                     clip-rule="evenodd" fill-rule="evenodd"></path>
                 </g>
               </svg>
-              <span class="list_text"> Được chiết xuất hoàn toàn từ thiên nhiên, Meli không chỉ mang đến hương vị tươi
-                mát mà còn đảm bảo lợi ích sức khỏe, nhờ không chứa chất bảo quản và đường tinh luyện</span>
+              <span class="list_text"> Không chứa chất bảo quản và đường tinh luyện</span>
             </li>
             <li class="list-description">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -244,11 +247,126 @@
       </div>
     </section>
 
+    <!-- Testimonials section -->
+    <section class="testimonials-section" id="testimonials">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="section-content">
+        <div class="slider-container swiper">
+          <div class="slider-wrapper">
+            <ul class="testimonials-list swiper-wrapper">
+              <li class="testimonial swiper-slide">
+                <img src="img/quoc.jpg" alt="User" class="user-img">
+                <h3 class="name">Dương Trung Quốc</h3>
+                <i class="feedback">"Sản phẩm rất chất lượng, đáng giá với giá tiền"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="img/dung.jpg" alt="User" class="user-img">
+                <h3 class="name">Mỹ Dung</h3>
+                <i class="feedback">"Hài lòng với sản phẩm"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="img/van.jpg" alt="User" class="user-img">
+                <h3 class="name">Ngọc Văn</h3>
+                <i class="feedback">"Sản phẩm đáng mua, đáng bỏ tiền"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="img/hue.jpg" alt="User" class="user-img">
+                <h3 class="name">Trịnh Thị Huệ</h3>
+                <i class="feedback">"Sản phẩm dễ vệ sinh và bảo quản"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="img/vit1.jpg" alt="User" class="user-img">
+                <h3 class="name">Kim Duck</h3>
+                <i class="feedback">"Giao hàng nhanh, đúng hẹn"</i>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="img/perry.webp" alt="User" class="user-img">
+                <h3 class="name">Đặc vụ P</h3>
+                <i class="feedback">"Sẽ tiếp tục ủng hộ cửa hàng và sản phẩm này trong tương lai"</i>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+        <ul class="contact-info-list">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>02 Nguyễn Đình Chiểu, Vĩnh Thọ, Nha Trang, Khánh Hòa</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>meli@vinabliss.com</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>0900100009</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday - Friday: 7:00 AM - 5:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Saturday: 9:00 AM - 3:00 PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-clock"></i>
+            <p>Sunday: Closed</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-globe"></i>
+            <p>https://duongtrungquoc.github.io/VinaBliss/</p>
+          </li>
+        </ul>
+
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Your name" class="form-input" required>
+          <input type="email" placeholder="Your email" class="form-input" required>
+          <textarea placeholder="Your message" class="form-input" required></textarea>
+          <button class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="section-content">
+        <p class="copyright-text"><i class="fa fa-copyright"></i> 2024 CÔNG TY CỔ PHẦN VINABLISS</p>
+
+        <div class="social-link-list">
+          <a href="https://www.facebook.com/profile.php?id=61567860052749&mibextid=LQQJ4d" class="social-link"
+            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@meli_vinafresh?_t=8qta4VndWhV&_r=1" class="social-link" target="_blank"><i
+              class="fa-brands fa-tiktok"></i></a>
+          <a href="hamster_reload/reload.html" class="social-link" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator">.</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </footer>
   </main>
 
 
+  <!-- Linking Swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
+  <!-- Linking Custom script -->
   <script src="script.js"></script>
 </body>
 
