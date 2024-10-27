@@ -7,3 +7,4 @@ menuOpenButton.addEventListener("click", () => {
 });
 // Close menu when the close button is clicked
 menuClosenButton.addEventListener("click", () => menuOpenButton.click());
+
