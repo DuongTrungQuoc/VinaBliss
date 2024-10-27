@@ -48,3 +48,15 @@ const swiper = new Swiper('.slider-wrapper', {
     }
   }
 });
+document.querySelector(".contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Ngăn chặn hành động submit mặc định
+
+  // Kiểm tra nếu form hợp lệ
+  if (this.checkValidity()) {
+    window.location.href = "thankyou/thankyou.html"; // Chuyển hướng khi form hợp lệ
+  } else {
+    // Nếu form không hợp lệ, hiện thông báo lỗi mặc định của HTML5
+    this.reportValidity();
+  }
+});
+
