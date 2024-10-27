@@ -950,8 +950,24 @@ header .navbar {
   font-size: var(--font-size-xxl);
 }
 
-.menu-section .menu-list .menu-item .menu-image {
+.menu-section .menu-list .menu-item .menu-image1 {
   max-width: 20vh;
+  /* aspect-ratio: 1; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.menu-section .menu-list .menu-item .menu-image2 {
+  /* max-width: 20vh; */
+  /* aspect-ratio: 1; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+
+}
+
+.menu-section .menu-list .menu-item .menu-image3 {
+  /* max-width: 20vh; */
   /* aspect-ratio: 1; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
@@ -966,7 +982,13 @@ header .navbar {
 
 }
 
-.menu-section .menu-list .menu-item p {}
+.menu-section .menu-list .menu-item .buy-button {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-m);
+  padding: 10px 26px;
+  font-weight: var(--font-weight-medium);
+}
 
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
