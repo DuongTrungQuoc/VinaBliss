@@ -8,3 +8,7 @@ menuOpenButton.addEventListener("click", () => {
 // Close menu when the close button is clicked
 menuClosenButton.addEventListener("click", () => menuOpenButton.click());
 
+function scrollToMenu() {
+  const menuSection = document.getElementById('menu');
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
