@@ -846,6 +846,7 @@ header .navbar {
 .product-section {
   background: var(--primary-color);
   min-height: 100vh;
+  padding: 0 20px;
 }
 
 .product-section .product-content {
@@ -872,6 +873,35 @@ header .navbar {
   font-size: var(--font-size-m);
   max-width: 70%;
   margin: 24px 0 40px;
+}
+
+.product-section .product-details .description li svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.product-section .product-details .description li span {
+  margin-left: 1rem;
+}
+
+.product-section .product-details .buy-button {
+
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-m);
+  font-weight: var(--font-weight-medium);
+  padding: 10px 26px;
+  transition: ease 0.5s;
+}
+
+.product-section .product-details .buy-button:hover {
+  border: 2px dashed #00BFA6;
+  background-color: #fff;
+  color: #00BFA6;
+}
+
+.product-section .product-details .buy-button:active {
+  background-color: #87dbd0;
 }
 
 .product-section .product-img {
